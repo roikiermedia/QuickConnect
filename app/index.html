@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>QuickConnect</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:vulcanized elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
+  <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="bower_components/core-menu/core-menu.html">
+  <link rel="import" href="bower_components/core-item/core-item.html">
+  <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+  <!-- endbuild-->
+</head>
+
+<body unresolved>
+
+  <core-scaffold>
+    <core-header-panel navigation flex mode="seamed">
+      <core-toolbar><h4>QuickConnect</h4></core-toolbar>
+      <core-menu theme="core-light-theme">
+        <div><h2>Paul Kreutzer</h2>
+          <h5>4 offene Aufgaben // 5 Gruppen</h5></div><hr>
+        <core-item icon="mail" label="Nachrichten"></core-item>
+        <core-item icon="perm-media" label="Dateien"></core-item>
+        <core-item icon="assignment" label="Aufgaben"></core-item>
+        <core-item icon="group-work" label="Gruppen"></core-item><hr>
+        <core-item icon="settings" label="Einstellungen"></core-item>
+      </core-menu>
+    </core-header-panel>
+    <div tool>Übersicht</div>
+    <div>Main content goes here...</div>
+  </core-scaffold>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild-->
+</body>
+
+</html>
