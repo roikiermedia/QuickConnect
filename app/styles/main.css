@@ -63,3 +63,24 @@ a {
 table td {
   /**border-bottom: 1px solid #bbbbbb; **/
 }
+
+#create {
+  width: 100%;
+}
+
+#cam {
+  margin-top: 10px;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #bbbbbb;
+  width: 100%;
+  height: 250px;
+}
+
+#cam p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  color: #bbbbbb;
+}

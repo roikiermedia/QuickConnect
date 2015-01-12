@@ -29,6 +29,8 @@
   <link rel="import" href="bower_components/core-item/core-item.html">
   <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
   <link rel="import" href="bower_components/paper-shadow/paper-shadow.html">
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
   <!-- endbuild-->
 </head>
 
@@ -49,52 +51,25 @@
         <a href="login.html"><core-item icon="exit-to-app" label="Abmelden"></core-item></a>
       </core-menu>
     </core-header-panel>
-    <div tool>Gruppen</div>
+    <div tool>Neue Gruppe</div>
 
     <div><paper-shadow z="1" class="card">
-      <core-item icon="group-work"><h3>Meine Gruppen</h3></core-item>
-      <table id=".tbl" width=100%>
-        <tr>
-          <th>Gruppe</th>
-          <th>Aufgaben</th>
-          <th><a id=poly href="add_group.html"><core-item icon="add-circle"></core-item></a></th>
-        </tr>
-        <tr>
-          <td>Freifunk Flensburg</td>
-          <td>23 Aufgaben</td>
-          <td><a id=poly><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>Die Slamigans</td>
-          <td>17 Aufgaben</td>
-          <td><a id=poly><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>roikier.media</td>
-          <td>2 Aufgaben</td>
-          <td><a id=poly><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>GdG Referat Jugendstil</td>
-          <td>0 Aufgaben</td>
-          <td><a id=poly><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-      </table>
+      <paper-input id="create" floatingLabel=true label="Hier tippen um eine neue Gruppe zu gründen..."></paper-input><br>
+      <div id="cam"><p>Hier tippen um einer Gruppe beizutreten...</p></div><br>
+      <div> </div>
+      <a href="index.html"><paper-button flex class="button">Abbrechen</paper-button></a>
+      <a href="groups.html"><paper-button class="button">Bestätigen</paper-button></a>
     </paper-shadow></div>
 
     <div><paper-shadow z="1" class="card">
-      <core-item icon="group-work"><h3>Gelöschte Gruppen</h3></core-item>
-      <table id=".tbl" width=100%>
-        <tr>
-          <th>Gruppe</th>
-          <th>Verfällt am</th>
-          <th>Wiederherstellen</th>
-        </tr>
-        <tr>
-          <td>brilliantshit.org</td>
-          <td>07.01.15</td>
-          <td><a id=poly><core-item icon="restore"></core-item></a></td>
-        </tr>
+      <b>Einladen via:</b><br>
+      <core-item icon="mail" label="Email"></core-item>
+    </paper-shadow></div>
+
+    <div><paper-shadow z="1" class="card">
+      <b>Beitreten via:</b><br>
+      <core-item icon="group-work" label="Gruppenname"></core-item>
+      <core-item icon="mail" label="Email"></core-item>
     </paper-shadow></div>
 
   </core-scaffold>
