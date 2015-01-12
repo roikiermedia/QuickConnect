@@ -103,3 +103,7 @@ table td {
 .cover {
   width: 100%;
 }
+
+#logo {
+  max-height: 200px;
+}
