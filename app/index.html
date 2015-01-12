@@ -1,3 +1,5 @@
+<!-- Dieser Dummy muss von einem Server aus geladen werden. Das Öffnen der Datei genügt nicht. Eine Onlinseversion des Dummys ist zu finden unter http://qc.roikier.media/. -->
+
 <!doctype html>
 <html>
 
@@ -17,6 +19,8 @@
   <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
   <!-- endbuild -->
 
+  <link rel="import" href="bower_components/polymer/polymer.html">
+
   <!-- build:vulcanized elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
   <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
@@ -24,6 +28,7 @@
   <link rel="import" href="bower_components/core-menu/core-menu.html">
   <link rel="import" href="bower_components/core-item/core-item.html">
   <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+  <link rel="import" href="bower_components/paper-shadow/paper-shadow.html">
   <!-- endbuild-->
 </head>
 
@@ -40,10 +45,13 @@
         <core-item icon="assignment" label="Aufgaben"></core-item>
         <core-item icon="group-work" label="Gruppen"></core-item><hr>
         <core-item icon="settings" label="Einstellungen"></core-item>
+        <a href="login.html"><core-item icon="exit-to-app" label="Abmelden"></core-item></a>
       </core-menu>
     </core-header-panel>
     <div tool>Übersicht</div>
-    <div>Main content goes here...</div>
+    <div><paper-shadow z="1" class="card">
+      // card content
+    </paper-shadow></div>
   </core-scaffold>
 
   <!-- build:js scripts/app.js -->
