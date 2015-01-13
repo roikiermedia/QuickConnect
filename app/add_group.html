@@ -51,18 +51,18 @@
         <a href="login.html"><core-item icon="exit-to-app" label="Abmelden"></core-item></a>
       </core-menu>
     </core-header-panel>
-    <div tool>Neue Gruppe</div>
+    <div tool>Gruppe beitreten</div>
 
     <div><paper-shadow z="1" class="card">
-      <paper-input id="create" floatingLabel=true label="Hier tippen um eine neue Gruppe zu gründen..."></paper-input><br>
-      <div id="cam"><p>Hier tippen um einer Gruppe beizutreten...</p></div><br>
+      <a href="create_group.html"><paper-input id="create" floatingLabel=true label="Hier tippen um eine neue Gruppe zu gründen..."></paper-input></a><br>
+        <a href="slamigans.html"><img src="images/qrscanned.jpg" id="qrscanned"/></a><br>
+        <i>Scanne den QR-Code einer Gruppe um ihr beizutreten...</i><br><br>
       <a href="index.html"><paper-button flex class="button">Abbrechen</paper-button></a>
     </paper-shadow></div>
 
     <div><paper-shadow z="1" class="card">
       <b>Beitreten via:</b><br>
-      <core-item icon="mail" label="Email"></core-item>
-      <core-item icon="group-work" label="Gruppenname"></core-item>
+      <a href="slamigans.html"><core-item icon="mail" label="Email"></core-item></a>
     </paper-shadow></div>
 
   </core-scaffold>

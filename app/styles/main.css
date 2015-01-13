@@ -110,3 +110,8 @@ table td {
 
 .check {
 }
+
+#qrscanned {
+  border: solid 2px;
+  max-width: 100%;
+}
