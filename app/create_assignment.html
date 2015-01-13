@@ -29,6 +29,8 @@
   <link rel="import" href="bower_components/core-item/core-item.html">
   <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
   <link rel="import" href="bower_components/paper-shadow/paper-shadow.html">
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
   <!-- endbuild-->
 </head>
 
@@ -49,73 +51,21 @@
         <a href="login.html"><core-item icon="exit-to-app" label="Abmelden"></core-item></a>
       </core-menu>
     </core-header-panel>
-    <div tool>Aufgaben</div>
+    <div tool>Neue Aufgabe</div>
 
     <div><paper-shadow z="1" class="card">
-      <core-item icon="assignment"><h3>Meine Aufgaben</h3></core-item>
-      <table id=".tbl" width=100%>
-        <tr>
-          <th>Aufgabe</th>
-          <th>Deadline</th>
-          <th><a id=poly href="create_assignment.html"><core-item icon="add-circle"></core-item></a></th>
-        </tr>
-        <tr>
-          <td>Omni-Antenne anbringen...</td>
-          <td>31.11.2014</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>StationVoice aufnehmen</td>
-          <td>20.12.2014</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>Fahrt zum 31c3 planen</td>
-          <td>26.12.2014</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>Website designen</td>
-          <td>01.01.2015</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-      </table>
+      <paper-input label="Aufgabenname" floatingLabel=true id="create"></paper-input><br>
+      <paper-input label="Beschreibung" floatingLabel=true id="create"></paper-input><br>
+    </paper-shadow></div>
+
+    <div><paper-shadow z=1 class="card">
+      <paper-input label="Zu erledigen bis:" floatingLabel=true id="create"></paper-input><br>
+      <paper-input label="Gruppenname" floatingLabel=true id="create"></paper-input><br><br>
+      <paper-button flex class="button">Weiteres Mitglied hinzufügen</paper-button>
     </paper-shadow></div>
 
     <div><paper-shadow z="1" class="card">
-      <core-item icon="assignment"><h3>Alle Aufgaben</h3></core-item>
-      <table id=".tbl" width=100%>
-        <tr>
-          <th>Aufgabe</th>
-          <th>Gruppe</th>
-          <th><a id=poly href="create_assignment.html"><core-item icon="add-circle"></core-item></a></th>
-        </tr>
-        <tr>
-          <td>Texte für Delta-Radio aufnehme...</td>
-          <td>Die Slamigans</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>Mail an Fabian Navarro wg. Feat...</td>
-          <td>Die Slamigans</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>Lineup besetzen</td>
-          <td>Die Slamigans</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>OK Backup einrichten</td>
-          <td>Freifunk Flensburg</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>Ticket-System entwickeln</td>
-          <td>Freifunk Flensburg</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-      </table>
+      <a href="index.html"><paper-button flex class="button">Abbrechen</paper-button></a><a href="assignment.html"><paper-button flex class="button">Fertigstellen</paper-button></a>
     </paper-shadow></div>
 
   </core-scaffold>
