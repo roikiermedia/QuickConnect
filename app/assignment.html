@@ -29,6 +29,8 @@
   <link rel="import" href="bower_components/core-item/core-item.html">
   <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
   <link rel="import" href="bower_components/paper-shadow/paper-shadow.html">
+  <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
   <!-- endbuild-->
 </head>
 
@@ -58,43 +60,29 @@
     </paper-shadow></div>
 
     <div><paper-shadow z="1" class="card">
-      <core-item icon="assignment"><h3>Aufgaben der Gruppe</h3></core-item>
-      <table id=".tbl" width=100%>
-        <tr>
-          <th>Aufgabe</th>
-          <th>Deadline</th>
-          <th>Wer?</th>
-          <th><a id=poly><core-item icon="add-circle"></core-item></a></th>
-        </tr>
-        <tr>
-          <td>StationVoice aufnehmen</td>
-          <td>20.12.14</td>
-          <td>Thorben, Jacqueline</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>Texte für Delta-Radio aufnehme...</td>
-          <td>20.12.14</td>
-          <td>Thorben, Jacqueline, Hille</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>Mail an Fabian Navarro wg. Feat...</td>
-          <td>01.01.15</td>
-          <td>René</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>Lineup besetzen</td>
-          <td>03.03.15</td>
-          <td>Jacqueline</td>
-          <td><a id=poly href="assignment.html"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-      </table>
+      <h2>Texte für Delta-Radio aufnehmen</h2><br>
+      <b>Bis zum 20.12.2014                        Erledigt?       </b><paper-checkbox class="check"></paper-checkbox><br>
+      <div flex><i>Thorben, Jacqueline, Hille</i></div>
     </paper-shadow></div>
 
     <div><paper-shadow z="1" class="card">
-      <core-item icon="perm-media"><h3>Alle Dateien</h3></core-item>
+      <i>Beschreibung:</i><br>
+      <p>Ich bin derzeit in Kommunikation mit Delta Radio. Ein Redakteur ist sehr Slamin-
+        teressiert und möchte gerne mehr über die Szene berichten.
+        Jetzt entstand die Idee, dass er über einen relativ langen Zeitraum täglich kurzes
+        von guten Slammern aus SH spielen möchte. Es geht dabei um kurze Text bis
+        eine Minute Länge.
+
+        Wer dabei sein möchte und Stücke dieser Länge hat, sollte die Texte (gerne auch
+        mehrere) aufnehmen und mir per Mail schicken (info@art.com), euer
+        Urheberrecht wird in keiner Weise angetastet. Kurze Gedichte, Kürzestprosa und
+        ähnliches.</p><br>
+      <i>Erstellt von Bjørn am 18.11.2014</i><br><br>
+      <a href="slamigans.html"><paper-button flex class="button">Zurück</paper-button></a><paper-button flex class="button">Weiteres Mitglied hinzufügen</paper-button>
+    </paper-shadow></div>
+
+    <div><paper-shadow z="1" class="card">
+      <core-item icon="perm-media"><h3>Zugehörige Dateien</h3></core-item>
       <table id=".tbl" width=100%>
         <tr>
           <th>Datei</th>
@@ -102,23 +90,13 @@
           <th><a id=poly><core-item icon="add-circle"></core-item></a></th>
         </tr>
         <tr>
-          <td>Graupelschauer.rtf</td>
-          <td>Thorben</td>
-          <td><a id=poly href="https://docs.google.com/document/d/11L4jLJhIE7tD4fT5Mpqv_RSNeFJAv1rwN_Ml-aX6wE4/edit?usp=sharing"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>anmoderation_061114.gdoc</td>
+          <td>schubladentext.mp3</td>
           <td>Jacqueline</td>
           <td><a id=poly href="https://docs.google.com/document/d/11L4jLJhIE7tD4fT5Mpqv_RSNeFJAv1rwN_Ml-aX6wE4/edit?usp=sharing"><core-item icon="chevron-right"></core-item></a></td>
         </tr>
         <tr>
-          <td>Lineup120315.gdoc</td>
-          <td>Hille</td>
-          <td><a id=poly href="https://docs.google.com/document/d/11L4jLJhIE7tD4fT5Mpqv_RSNeFJAv1rwN_Ml-aX6wE4/edit?usp=sharing"><core-item icon="chevron-right"></core-item></a></td>
-        </tr>
-        <tr>
-          <td>LustigesVideo.mp4</td>
-          <td>Bjørn</td>
+          <td>Graupelschauer_final.wav</td>
+          <td>Thorben</td>
           <td><a id=poly href="https://docs.google.com/document/d/11L4jLJhIE7tD4fT5Mpqv_RSNeFJAv1rwN_Ml-aX6wE4/edit?usp=sharing"><core-item icon="chevron-right"></core-item></a></td>
         </tr>
       </table>
