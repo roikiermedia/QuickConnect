@@ -113,5 +113,6 @@ table td {
 
 #qrscanned {
   border: solid 2px;
-  max-width: 100%;
+  width: 100%;
+
 }
