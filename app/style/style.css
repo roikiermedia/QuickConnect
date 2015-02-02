@@ -1,0 +1,17 @@
+/*  browse-happy
+    ========================================================================== */
+
+.browse-happy,
+noscript {
+    background-color: #ffb400; /*freifunk-gelb*/
+    color: #ffffff; /* white */
+    width: 100%;
+    padding: 2em;
+    display: block;
+    margin: 1em 0;
+}
+
+.browse-happy a,
+noscript a {
+    color: #ffffff; /* white */
+}
