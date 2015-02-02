@@ -15,3 +15,14 @@ noscript {
 noscript a {
     color: #ffffff; /* white */
 }
+
+/*  scaffolding
+    ========================================================================== */
+
+.drawer {
+  background-color: #fdfdfd;
+}
+
+.mainpanel {
+  background-color: #fcfcfc;
+}
