@@ -19,8 +19,13 @@ noscript a {
 /*  scaffolding
     ========================================================================== */
 
+.toolbar {
+  color: #ffffff;
+  background-color: #2aaaff;
+}
+
 .drawer {
-  background-color: #fdfdfd;
+  background-color: #fcfcfc;
 }
 
 .mainpanel {
